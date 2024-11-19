@@ -33,6 +33,7 @@ namespace Server
                 {
                     TcpClient client = listener.AcceptTcpClient();
 
+                    //define o ip do cliente e associa ao username
                     NetworkStream stream = client.GetStream();
                     byte[] buffer = new byte[1024];
                     int bytesRead = stream.Read(buffer, 0, buffer.Length);
