@@ -17,7 +17,7 @@ namespace Server
         static void Server()
         {
             //configura a porta e o ip da rede (que nesse caso vai ser dentro do roteador de internet de um celular) 
-            IPAddress ipAddress = IPAddress.Parse("192.168.0.123");
+            IPAddress ipAddress = IPAddress.Parse("IP");
             Console.WriteLine($"Host: {ipAddress}");
             int port = 8080;
             Console.WriteLine($"Porta: {port}");
@@ -27,7 +27,7 @@ namespace Server
             try
             {
                 listener.Start();
-                Console.WriteLine("Servidor Online. Aguardando conexões... em 192.168.0.123:8080");
+                Console.WriteLine("Servidor Online. Aguardando conexões... em IP:8080");
 
                 while (true)
                 {
