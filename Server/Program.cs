@@ -16,6 +16,7 @@ namespace Server
 
         static void Server()
         {
+            //configura a porta e o ip da rede (que nesse caso vai ser dentro do roteador de internet de um celular) 
             IPAddress ipAddress = IPAddress.Parse("192.168.0.123");
             Console.WriteLine($"Host: {ipAddress}");
             int port = 8080;
